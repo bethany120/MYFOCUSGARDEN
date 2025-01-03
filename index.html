@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Garden</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Page Title -->
+    <div class="title">
+      <h1>Focus Garden</h1>
+      <p>Made by Bethany, with special thanks to ChatGPT</p>
+    </div>
+
+    <!-- Coin Counter -->
+    <div class="coin-counter">
+      <img
+        src="assets/images/coin.svg"
+        alt="Coin Icon"
+        style="width: 40px; vertical-align: middle"
+      />
+      <span>Coins: <span id="coin-count">0</span></span>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer">
+      <h2 id="timer-label">Focus</h2>
+      <p id="timer-display">25:00</p>
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+      <p class="instructions">
+        - Focus for 25 minutes or more to earn 5 coins.<br />
+        - Spend coins in the shop.<br />
+        - Click the backpack to open or close the inventory.<br />
+        - Click an item in the garden to return it to the inventory.
+      </p>
+    </div>
+
+    <!-- Garden Section -->
+    <div class="garden">
+      <div class="garden-area">
+        <img
+          src="assets/images/Grass light.svg"
+          alt="Light Grass"
+          class="grass"
+        />
+        <img
+          src="assets/images/Grass dark.svg"
+          alt="Dark Grass"
+          class="grass"
+        />
+        <img
+          src="assets/images/Grass light.svg"
+          alt="Light Grass"
+          class="grass"
+        />
+        <img
+          src="assets/images/Grass dark.svg"
+          alt="Dark Grass"
+          class="grass"
+        />
+        <img
+          src="assets/images/Grass light.svg"
+          alt="Light Grass"
+          class="grass"
+        />
+      </div>
+      <img
+        src="assets/images/backpack.svg"
+        alt="Backpack Icon"
+        class="backpack"
+      />
+    </div>
+
+    <!-- Shop Section -->
+  </body>
+</html>
+<div class="shop">
+  <img src="assets/images/Stall shop.svg" alt="Shop Icon" class="shop-design" />
+
+  <!-- Scrollable section of items -->
+  <div class="shop-items">
+    <div class="shop-item">
+      <img
+        src="assets/images/tulip orange.svg"
+        alt="Orange Tulip"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Tulip for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/DAISY pink.svg"
+        alt="Pink Daisy"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Pink Daisy for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/DAISY white.svg"
+        alt="White Daisy"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy White Daisy for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/Grass light.svg"
+        alt="Light Grass"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Light Grass for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/Grass dark.svg"
+        alt="Dark Grass"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Dark Grass for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/lavender.svg"
+        alt="Lavender"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Lavender for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/crocus.svg"
+        alt="Crocus"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Crocus for $1</button>
+    </div>
+    <div class="shop-item">
+      <img
+        src="assets/images/marigold2.svg"
+        alt="Marigold"
+        class="shop-item-image"
+      />
+      <button class="buy-button">Buy Marigold for $1</button>
+    </div>
+  </div>
+</div>

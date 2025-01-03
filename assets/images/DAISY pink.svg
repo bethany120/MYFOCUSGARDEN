@@ -1,0 +1,17 @@
+<svg width="667" height="620" viewBox="0 0 667 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_16)">
+<ellipse cx="249.397" cy="135.152" rx="88.8816" ry="103.829" transform="rotate(-32 249.397 135.152)" fill="#FDF2F2"/>
+<ellipse cx="162.458" cy="268.396" rx="86.5" ry="97.5" transform="rotate(-72 162.458 268.396)" fill="#F5E5E5"/>
+<ellipse cx="353.5" cy="489" rx="86.5" ry="99" fill="#FFF1F1"/>
+<ellipse cx="189.354" cy="425.881" rx="86.5" ry="97.5" transform="rotate(64 189.354 425.881)" fill="#FBE4E4"/>
+<ellipse cx="536" cy="262.5" rx="86.5" ry="112" transform="rotate(90 536 262.5)" fill="#FFE9E9"/>
+<ellipse cx="511.5" cy="425.885" rx="77.2564" ry="98.064" transform="rotate(-56 511.5 425.885)" fill="#F5E5E5"/>
+<ellipse cx="440.072" cy="130.445" rx="86.5" ry="99" transform="rotate(34 440.072 130.445)" fill="#F5E5E5"/>
+<circle cx="341" cy="301" r="125" fill="#FFD580"/>
+</g>
+<defs>
+<clipPath id="clip0_1_16">
+<rect width="667" height="620" fill="white" transform="matrix(-1 0 0 1 667 0)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,287 @@
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.title h1 {
+  font-size: 2.5em;
+  color: #444;
+  margin: 0;
+}
+
+.title p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0 0;
+}
+/* Overall Page Layout */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8c8dc;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 2fr 2fr;
+  height: calc(100vh - 40px); /* Full height minus padding */
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Coin Counter Styling */
+.coin-counter {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 1.2em;
+}
+
+/* Timer Styling */
+.timer {
+  grid-column: 1;
+  grid-row: 2 / span 2; /* Spans across rows 2 and 3 */
+  background-color: #fbdce5; /* Light pink background */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Garden Styling */
+.garden {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: rgb(138, 207, 138); /* Green garden area */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Full width of its grid cell */
+  height: 100%; /* Full height of its grid cell */
+}
+
+.grass {
+  width: 70px;
+  height: auto;
+  position: absolute;
+}
+
+/* Scatter grass items */
+.grass:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+
+.grass:nth-child(2) {
+  top: 50%;
+  left: 40%;
+}
+
+.grass:nth-child(3) {
+  top: 70%;
+  left: 10%;
+}
+.grass:nth-child(4) {
+  top: 20%;
+  left: 70%;
+}
+
+.grass:nth-child(5) {
+  top: 60%;
+  left: 80%;
+}
+
+/* Shop Styling */
+.shop {
+  position: relative; /* Ensures child elements position relative to this */
+  width: 500px; /* Full width of the shop design */
+  height: 350px; /* Combined height of the top and bottom sections */
+  margin: 0 auto; /* Center the shop horizontally */
+  background: url("assets/images/Stall shop.svg") no-repeat center/contain;
+  overflow: hidden; /* Hide any content outside the shop container */
+}
+
+.shop-design {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevent stretching */
+}
+.shop-items {
+  position: absolute; /* Position relative to the shop container */
+  top: calc(50% - 70px); /* Center vertically (103px height divided by 2) */
+  left: calc(50% - 150px); /* Center horizontally (170px width divided by 2) */
+  width: 300px; /* Match the shop window width */
+  height: 140px; /* Match the shop window height */
+  display: flex;
+  gap: 10px; /* Space between items */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  scrollbar-width: thin; /* Firefox scrollbar styling */
+  scrollbar-color: #ffcccb #ffffff; /* Firefox scrollbar colors */
+}
+
+.shop-items::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.shop-items::-webkit-scrollbar-thumb {
+  background-color: #ffcccb; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.shop-items::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Scrollbar track color */
+}
+.shop-item {
+  display: flex;
+  flex-direction: column; /* Stack the image and button vertically */
+  align-items: center;
+  justify-content: space-between; /* Ensure even spacing */
+  background-color: #fbdce5; /* Light pink for items */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80px; /* Fixed width for items */
+  height: 120px; /* Ensure all items have the same height */
+  flex: 0 0 auto; /* Prevent shrinking/growing */
+  z-index: 1; /* Ensure it's above other layers */
+  overflow: hidden; /* Prevent content from spilling out */
+}
+.shop-item-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80px; /* Constrain the image height */
+  object-fit: contain; /* Preserve aspect ratio */
+  flex-grow: 1; /* Let the image grow/shrink as needed */
+  margin-bottom: 5px; /* Space between the image and the button */
+}
+.buy-button {
+  background-color: #ffcccb;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  width: 100%; /* Button width relative to the container */
+  text-align: center;
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.buy-button:hover {
+  background-color: #f08080; /* Darker pink on hover */
+}
+
+.coin-counter {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #444;
+  gap: 10px;
+}
+
+.coin-counter img {
+  width: 60px;
+  height: auto;
+}
+.backpack {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80px; /* Increase size */
+  height: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.backpack:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  filter: brightness(1.2); /* Make it brighter */
+  border: 2px solid #dcf1fb; /* Optional outline */
+}
+.backpack-menu {
+  position: absolute;
+  top: 450px; /* Adjust to position over the timer */
+  left: 250px; /* Adjust based on your layout */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it appears above other elements */
+  width: 200px; /* Optional: Set a fixed width */
+}
+
+.backpack-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.backpack-item img {
+  width: 30px;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .shop {
+    max-width: 600px; /* Slightly smaller shop on medium screens */
+  }
+
+  .shop-items {
+    width: 80%; /* Adjust scrollable section for smaller screens */
+    left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop {
+    max-width: 500px; /* Smaller shop on small screens */
+  }
+
+  .shop-items {
+    width: 90%; /* Adjust scrollable section for smaller screens */
+    left: 5%;
+  }
+}
+.garden-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.garden-item {
+  position: absolute;
+}
+
+.remove-item {
+  font-size: 14px;
+  color: red;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.instructions {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.instructions h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.instructions ul {
+  margin: 0;
+  padding: 0 15px;
+  list-style-type: disc;
+}
+
+.instructions li {
+  margin-bottom: 5px;
+}
